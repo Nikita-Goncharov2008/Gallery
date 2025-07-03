@@ -1,10 +1,19 @@
 import React from 'react';
+import Menu from '../components/Menu';
+import Footer from '../components/Footer';
+import ProjectCard from '../components/ProjectCard';
 
-const IllustratorProjects = () => {
+const IllustratorProjects = ({data}) => {
     return (
-        <div>
-            
-        </div>
+        <>
+        <Menu/>
+            <div className="content-illustrator">
+                <div className="card-galery">
+                    {data.map(elem=>(<ProjectCard key={elem.id} id={elem.id} description={elem.description} title={elem.title} image={elem.image}/>))}
+                </div>
+            </div>
+        <Footer/>
+        </>
     );
 }
 
