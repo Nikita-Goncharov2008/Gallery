@@ -2,7 +2,7 @@
   "name": "galery",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://nikitagoncharov.github.io/my-gallery",
+  "homepage": "https://nikita-goncharov2008.github.io/Gallery/",
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
