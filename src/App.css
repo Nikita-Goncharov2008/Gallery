@@ -16,6 +16,7 @@ a, a:visited{
 body{
   background-color: #1e1e2f;
   color: white;
+  flex-direction: column;
 }
 /* menu styles */
 .menu{
@@ -37,6 +38,7 @@ footer{
   background-color: #2d2d44;
   padding:20px 40px;
   margin-top: 30px;
+
 }
 footer ul{
   list-style: none;
@@ -44,9 +46,15 @@ footer ul{
 footer *{
   margin: 20px 0;
 }
+
+.resume a{
+  text-decoration: underline;
+  text-underline-offset: 2px  ;
+}
 /* home page styles */
 .home-content__icons{
   text-align: center;
+  
 }
 .icons{
   max-width: 30%;
@@ -54,7 +62,7 @@ footer *{
   border-radius:100px ;
 }
 .home-content p{
-  margin: 30px auto;
+  margin: 30px auto 50px;
   max-width: 80%;
   text-align: center;
   font-size: 1.4em;
@@ -62,17 +70,16 @@ footer *{
 }
 /* projects styles */
 .card-container{
-  /* color: black; */
   width:300px ;
   min-height: 400px;
   border-radius: 10px;
   text-align: center;
   background-color: #313244;
-  /* background-color: white; */
+  
 }
 
 .card-image{
-  width: 70%;
+  width: 270px;
   height: 270px;
   object-fit: cover;
   background-color: white;
@@ -109,14 +116,199 @@ footer *{
   text-underline-offset: 5px ;
 }
 .detailed-image{
-  height: 80vh;
+  max-width: 80vw;
+  /* height: 80vh; */
   background-color: white;
   
 }
 .detailed-description{
+  line-height: 1.6em;
+  text-align: center;
   font-size: 1.4em;
   margin: 30px 0 20px;
   background-color: #313244;
   padding: 10px 40px;
   border-radius: .8em;
+  max-width: 80%;
+}
+.back-link{
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+@media (min-width:320px){
+  /* footer */
+  footer{
+    padding: 7px 15px;
+    font-size: 0.9em;
+  }
+  footer *{
+    margin: 17px 0;
+  }
+  /* menu */
+  .menu{
+    font-size: 1em;
+  }
+  /* Home */
+  .icons{
+    max-width: 35%;
+    border-radius: 30px;
+    margin: 25px 20px;
+  }
+  .home-content p{
+    font-size: 1em;
+    line-height: 1.8em;
+  }
+  /* projects */
+  .card-galery{
+    grid-template-columns: 1fr
+  }
+  .card-description{
+    width:80%;
+  }
+  /* detailed pics */
+  .detailed-title{
+    font-size: 1.3em;
+  }
+  .detailed-description{
+    font-size: 1em;
+    padding: 10px 20px;
+    border-radius: 20px;
+  }
+}
+
+@media (min-width:425px) {
+  /* footer */
+  footer{
+    padding: 10px 20px;
+    font-size: 1em;
+  }
+  footer *{
+    margin: 15px 0;
+    
+  }
+  /* menu */
+  .menu{
+    font-size: 1.2em;
+  }
+  /* Home */
+  .icons{
+    max-width: 35%;
+    border-radius: 30px;
+    margin: 25px 20px;
+  }
+  .home-content p{
+    font-size: 1em;
+    line-height: 2em;
+  }
+  /* projects */
+  .card-galery{
+    grid-template-columns: 1fr
+  }
+  /* detailed pics */
+  .detailed-title{
+    font-size: 1.3em;
+  }
+  .detailed-description{
+    font-size: 1em;
+  }
+}
+
+@media (min-width:768px) {
+  /* projects */
+  .card-galery{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  /* home */
+  .icons{
+    border-radius: 50px;
+  }
+
+}
+@media (min-width:1024px) {
+  /* home */
+  .home-page{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .icons{
+    border-radius: 60px;
+  }
+  /* detailed pics */
+  .detailed-title{
+    font-size: 3em;
+  }
+}
+@media (min-width:1440px) {
+  /* menu */
+  .menu{
+    font-size: 2em;
+  }
+  .menu-navigation{
+    padding: 25px 0;
+  }
+    /* projects */
+  .card-galery{
+    grid-template-columns: repeat(3, 1fr);
+    
+  }
+  /* home */
+  .icons{
+    border-radius: 80px;
+  }
+}
+@media (min-width:1920px  ) {
+  /* menu */
+  .menu{
+    font-size: 2.5em;
+    margin-bottom: 45px;
+  }
+  .menu-navigation{
+    padding: 40px 0;
+  }
+  /* footer */
+  footer{
+    font-size: 1.5em;
+
+  }
+  footer *{
+    margin: 40px 0;
+  }
+  /* home page */
+  .icons{
+    border-radius: 100px;
+    max-width: 20%;
+  }
+  .home-content p{
+    font-size: 1.9em;
+  }
+  /* projects */
+  .card-galery{
+    margin: 70px auto;
+  }
+  .card-image{
+    margin:40px 0;
+    height: 350px;
+    width: 350px;
+  }
+  .card-container{
+    font-size: 1.3em;
+  }
+  /* detailed pic */
+  .back-link{
+    font-size: 1.4em;
+  }
+  .detailed-description{
+    font-size: 1.6em;
+    margin: 60px 0 40px;
+  }
+}
+ 
+@media (min-width:2240px){
+  /* projects */
+  .card-image{
+    width: 450px;
+    height: 450px;
+  }
 }

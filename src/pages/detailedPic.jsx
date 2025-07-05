@@ -14,7 +14,7 @@ const DetailedPic = ({data}) => {
                     <h3 className="detailed-title">{elem.title}</h3>
                     <img className = 'detailed-image'src={elem.image} alt={elem.title} />
                     <p className="detailed-description">{elem.description}</p>
-                    <Link to = {location == 'photoshop'? '/photoshop':'/illustrator'}>Get back</Link>
+                    <Link className='back-link' to = {location == 'photoshop'? '/photoshop':'/illustrator'}>Get back</Link>
                 </div>
             <Footer/>
         </>

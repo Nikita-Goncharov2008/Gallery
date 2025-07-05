@@ -11,7 +11,7 @@ const Footer = () => {
                 <li>email - <span className = 'gmail'>nikitwork16@gmail.com</span></li>
                 <li>GitHub - <span className="github">Nikita-Goncharov2008</span></li>
             </ul>
-            <p className="copyright"><span className = 'copyright-year'></span>&#169; Nikita Goncharov</p>
+            <p className="copyright"><span className = 'copyright-year'>2025</span>&#169; Nikita Goncharov</p>
         </footer>
         </div>
     );
